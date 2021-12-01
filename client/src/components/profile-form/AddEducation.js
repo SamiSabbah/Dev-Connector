@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -26,7 +26,7 @@ const AddEducation = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
-    <Fragment>
+    <section className="container">
       <h1 className="large text-primary">Add Your Education</h1>
       <p className="lead">
         <i className="fas fa-graduation-cap"></i> Add any school, bootcamp, etc
@@ -116,7 +116,7 @@ const AddEducation = () => {
           Go Back
         </Link>
       </form>
-    </Fragment>
+    </section>
   );
 };
 

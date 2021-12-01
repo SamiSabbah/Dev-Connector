@@ -14,7 +14,7 @@ const Profiles = () => {
   }, [dispatch]);
 
   return (
-    <Fragment>
+    <section className="container">
       {loading ? (
         <Spinner />
       ) : (
@@ -35,7 +35,7 @@ const Profiles = () => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </section>
   );
 };
 

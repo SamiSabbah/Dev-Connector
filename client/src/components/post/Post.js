@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 
@@ -20,9 +20,11 @@ const Post = () => {
   }, [disptach, id]);
 
   return loading || post === null ? (
-    <Spinner />
+    <section className="container">
+      <Spinner />
+    </section>
   ) : (
-    <Fragment>
+    <section className="container">
       <Link to="/posts" className="btn">
         Back To Posts
       </Link>
@@ -33,7 +35,7 @@ const Post = () => {
           <CommentItem key={comment._id} comment={comment} postId={id} />
         ))}
       </div>
-    </Fragment>
+    </section>
   );
 };
 

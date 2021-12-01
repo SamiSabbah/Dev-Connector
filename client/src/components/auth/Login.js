@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, Redirect } from 'react-router-dom';
 import { login } from '../../features/authSlice';
@@ -26,7 +26,7 @@ const Login = () => {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <Fragment>
+    <section className="container">
       <h1 className="large text-primary">Sign in</h1>
       <p className="lead">
         <i className="fas fa-user"></i> Sign Into Your Account
@@ -62,7 +62,7 @@ const Login = () => {
       <p className="my-1">
         Don't have an account? <Link to="/register">Sign Up</Link>
       </p>
-    </Fragment>
+    </section>
   );
 };
 

@@ -19,16 +19,18 @@ const Dashboard = () => {
   }, [dispatch]);
 
   return loading ? (
-    <Spinner />
+    <section className="container">
+      <Spinner />
+    </section>
   ) : !profile ? (
-    <Fragment>
+    <section className="container">
       <h3>There's no Profile</h3>
       <Link className="btn" to="/create-profile">
         Create Profile
       </Link>
-    </Fragment>
+    </section>
   ) : (
-    <Fragment>
+    <section className="container">
       <h1 className="large text-primary">Dashboard</h1>
       <p className="lead">
         <i className="fas fa-user" /> Welcome {user && user.name}
@@ -55,7 +57,7 @@ const Dashboard = () => {
           </Link>
         </Fragment>
       )}
-    </Fragment>
+    </section>
   );
 };
 

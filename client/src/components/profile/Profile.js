@@ -25,7 +25,7 @@ const Profile = () => {
   }, [dispatch, id]);
 
   return (
-    <Fragment>
+    <section className="container">
       {selectedProfile === null || loading ? (
         <Spinner />
       ) : (
@@ -79,7 +79,7 @@ const Profile = () => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </section>
   );
 };
 

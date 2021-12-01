@@ -72,7 +72,7 @@ const EditProfile = () => {
   };
 
   return (
-    <Fragment>
+    <section className="container">
       {loading ? (
         <Spinner />
       ) : (
@@ -256,7 +256,7 @@ const EditProfile = () => {
           </form>
         </Fragment>
       )}
-    </Fragment>
+    </section>
   );
 };
 

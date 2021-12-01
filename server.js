@@ -2,6 +2,7 @@ const express = require('express');
 const rateLimit = require('express-rate-limit');
 const http = require('http');
 const socketio = require('socket.io');
+const path = require('path');
 
 const connectDB = require('./config/db');
 
