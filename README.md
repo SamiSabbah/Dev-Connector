@@ -1,5 +1,7 @@
 # DevConnector MERN App
 
-## npm run dev for development
+Run **npm i** to install node_modules
 
-to visit the website [DevConnector][https://developer-connector-sami.herokuapp.com/]
+To start the development mode **npm run dev**
+
+To visit the website [DevConnector](https://developer-connector-sami.herokuapp.com/)
