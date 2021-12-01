@@ -1,5 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://Sami:o2nqQze34EM097dJ@cluster0.mhwzm.mongodb.net/test?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://admin:XuzuCUOq8nuJoshA@cluster0.mhwzm.mongodb.net/production?retryWrites=true&w=majority",
     "jwtSecret": "sami-sabbah-jsonwebtoken-secretkey",
     "githubClientId": "Iv1.4b7961bd14401b51",
     "githubSecret": "010e73d84e10186b0a22af4fabab1032487ec667"
